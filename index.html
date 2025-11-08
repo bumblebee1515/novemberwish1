@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome My Love 💖</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f1b, #1b1b2f, #2a1b3d);
+      color: #fff;
+    }
+
+    h1 {
+      color: #ff6fa5;
+      font-weight: 600;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 35px 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      width: 320px;
+      backdrop-filter: blur(5px);
+    }
+
+    .login-box p {
+      font-size: 0.9em;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1em;
+      text-align: center;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #ff6fa5;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    button {
+      width: 95%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #ff6fa5, #ff85b6);
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      background: linear-gradient(90deg, #ff85b6, #ff6fa5);
+    }
+
+    /* Date verification section */
+    .date-box {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .date-box p {
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .login-box {
+        width: 85%;
+        padding: 25px 20px;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome My Love💖</h1>
+
+  <div class="login-box">
+    <p>Enter your secret password to unlock this💌</p>
+    <input type="password" id="password" placeholder="Enter Passcode">
+
+    <div class="date-box">
+      <p>Verify the special date to continue</p>
+      <input type="date" id="dateInput" />
+    </div>
+
+    <button onclick="checkPassword()">Unlock 💫</button>
+  </div>
+
+  <footer>
+    <p>Made with Love | BumbleBee ©2025</p>
+  </footer>
+
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      var dateInput = document.getElementById("dateInput").value;
+
+      // Verify both password and specific date
+      if (password === "pleaseshowme" && dateInput === "2022-12-15") {
+        window.location.href = "https://bumblebee1515.github.io/advancewish/";
+      } else if (password !== "pleaseshowme") {
+        alert("Achoo! Password thappu💔 Again Try pannu😉!");
+      } else if (dateInput !== "2022-12-15") {
+        alert("Please remember and enter the correct date to unlock");
+      }
+    }
+  </script>
+</body>
+</html>
